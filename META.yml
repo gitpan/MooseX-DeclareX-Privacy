@@ -1,0 +1,35 @@
+---
+abstract: 'shiny syntax for MooseX::Privacy'
+author:
+  - 'Toby Inkster <tobyink@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.36
+  Test::Exception: 0
+  Test::More: 0.61
+configure_requires:
+  ExtUtils::MakeMaker: 6.36
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: MooseX::DeclareX::Privacy
+name: MooseX-DeclareX-Privacy
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+    - xt
+requires:
+  MooseX::DeclareX: 0
+  MooseX::Privacy: 0
+  perl: 5.005
+resources:
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=MooseX-DeclareX-Privacy
+  homepage: https://metacpan.org/release/MooseX-DeclareX-Privacy
+  license: http://dev.perl.org/licenses/
+version: 0.003
