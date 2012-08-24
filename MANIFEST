@@ -20,9 +20,9 @@ inc/Scalar/Util.pm
 inc/unicore/Name.pm
 inc/utf8.pm
 inc/YAML/Tiny.pm
-lib/MooseX/DeclareX/plugin/private.pm
-lib/MooseX/DeclareX/plugin/protected.pm
-lib/MooseX/DeclareX/plugin/public.pm
+lib/MooseX/DeclareX/Plugin/private.pm
+lib/MooseX/DeclareX/Plugin/protected.pm
+lib/MooseX/DeclareX/Plugin/public.pm
 lib/MooseX/DeclareX/Privacy.pm
 LICENSE
 Makefile.PL

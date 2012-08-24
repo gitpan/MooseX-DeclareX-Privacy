@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 84f78ae515e62e834b38e93f34ef124e61c499e5 Changes
+SHA1 58a88b92a0ea00a730027e6b49468e0002a8ddbf Changes
 SHA1 cc087c3dd6e1b519c680e68cd0231735a68300a0 LICENSE
-SHA1 4da576ea0dcd7e295134a5f35ef7acdcbbdc9076 MANIFEST
-SHA1 a840c8a66963aba1763149b83403928528c05291 META.yml
+SHA1 2d2fa55c0385fc79fd2f4afd904d0a618d8c3901 MANIFEST
+SHA1 b1e8a60e86548146d263fc1017f38bd5a637879c META.yml
 SHA1 da50d35f9bc21473691888031579fd3ad684e205 Makefile.PL
 SHA1 05912c7eb94d1e8a6aa934ebe403ebc3b256a0e7 README
 SHA1 374b22ef920faa0e20606194ba8e077e5610347a examples/privacy.pl
@@ -41,11 +41,11 @@ SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
 SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
 SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 1a03a7b4f087b5009c76015006843d4450e86427 lib/MooseX/DeclareX/Privacy.pm
-SHA1 e1c87490f1ff1eec3eec46ad65d6b10204f27f73 lib/MooseX/DeclareX/plugin/private.pm
-SHA1 ef277a66d8464b2f27728192de76a02c16f32ff9 lib/MooseX/DeclareX/plugin/protected.pm
-SHA1 957fd037d0ba8d0918f66de33b4e3de225cdd8ce lib/MooseX/DeclareX/plugin/public.pm
-SHA1 8c9457ee1f10d2c149dbe24a4eb498e6f999faf3 meta/changes.pret
+SHA1 c3f0b5adf68db45c4910f6babcd018ce0d887f13 lib/MooseX/DeclareX/Plugin/private.pm
+SHA1 c3a60f6d12305a4ffc381b9b9f84420119ff113e lib/MooseX/DeclareX/Plugin/protected.pm
+SHA1 e1cacbaa8b2741d9478d0298298dc897961d5a46 lib/MooseX/DeclareX/Plugin/public.pm
+SHA1 0e4b39b1e0ad10021e73792d61fd2d39e039f283 lib/MooseX/DeclareX/Privacy.pm
+SHA1 e2d341431ae42aa7fb7d5b477f5c855d811590e0 meta/changes.pret
 SHA1 c13a49909fcbdfa329ebbbeca1f36b6f7b65544e meta/doap.pret
 SHA1 b86955d8a0d27511265eebf61db1eec674b00e1a meta/makefile.pret
 SHA1 60c65526da796729324defe8a901e1ece228d3a6 t/01basic.t
@@ -53,7 +53,7 @@ SHA1 52ca42c534eb2abd2395b536c17673831dec3515 t/08privacy.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAlA1TLMACgkQzr+BKGoqfTktawCfWboSyqCDa4QO3jc90bu9C5Hc
-+3wAn3nFCIk1LQxkGnJnS/QA/CUvkmue
-=isSt
+iEYEARECAAYFAlA3OX8ACgkQzr+BKGoqfTnAXwCeI4LwgsOh0DlVq7g3EQrVhoPn
+HEcAoLRH9WIy6Y74DllaQFvGM+hr6j1U
+=vDZ1
 -----END PGP SIGNATURE-----
