@@ -1,4 +1,6 @@
 Changes
+COPYRIGHT
+CREDITS
 examples/privacy.pl
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
@@ -16,9 +18,6 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 inc/Module/Package.pm
 inc/Module/Package/Dist/RDF.pm
-inc/Scalar/Util.pm
-inc/unicore/Name.pm
-inc/utf8.pm
 inc/YAML/Tiny.pm
 lib/MooseX/DeclareX/Plugin/private.pm
 lib/MooseX/DeclareX/Plugin/protected.pm
@@ -27,6 +26,7 @@ lib/MooseX/DeclareX/Privacy.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.ttl
 META.yml
 meta/changes.pret
 meta/doap.pret

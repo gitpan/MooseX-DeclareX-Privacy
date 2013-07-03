@@ -4,8 +4,8 @@ author:
   - 'Toby Inkster <tobyink@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.36
-  Test::Exception: 0
-  Test::More: 0.61
+  Test::Fatal: 0
+  Test::More: 0.96
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
@@ -25,11 +25,11 @@ no_index:
     - t
     - xt
 requires:
-  MooseX::DeclareX: 0
-  MooseX::Privacy: 0
+  MooseX::DeclareX: 0.008
+  MooseX::Privacy: 0.05
   perl: 5.005
 resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=MooseX-DeclareX-Privacy
   homepage: https://metacpan.org/release/MooseX-DeclareX-Privacy
   license: http://dev.perl.org/licenses/
-version: 0.004
+version: 0.005

@@ -2,7 +2,7 @@ package MooseX::DeclareX::Plugin::protected;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::protected::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::protected::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::protected::VERSION   = '0.005';
 }
 
 use Moose;
@@ -24,11 +24,22 @@ sub plugin_setup
 		if $kw->can('add_namespace_customizations');
 }
 
+sub HAS
+{
+	my $attrs = shift;
+	Moose->throw_error('Usage: protected has \'name\' => ( key => value, ... )')
+		if @_ % 2 == 1;
+	$attrs = [$attrs] unless ref $attrs eq 'ARRAY';
+	my %options = ( definition_context => Moose::Util::_caller_info(), @_ );
+	push @{ $options{traits} }, 'Protected';
+	caller->meta->add_attribute($_, %options) for @$attrs;
+}
+
 package MooseX::DeclareX::Plugin::protected::Role;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::protected::Role::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::protected::Role::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::protected::Role::VERSION   = '0.005';
 }
 
 use Moose::Role;
@@ -47,11 +58,13 @@ package MooseX::DeclareX::Plugin::protected::Parser;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::protected::Parser::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::protected::Parser::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::protected::Parser::VERSION   = '0.005';
 }
 
 use Moose;
 extends 'MooseX::DeclareX::MethodPrefix';
+
+sub handle_has { 'MooseX::DeclareX::Plugin::protected::HAS' };
 
 override prefix_keyword => sub { 'protected' };
 override install_method => sub {

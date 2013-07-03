@@ -2,7 +2,7 @@ package MooseX::DeclareX::Plugin::private;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::private::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::private::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::private::VERSION   = '0.005';
 }
 
 use Moose;
@@ -24,11 +24,22 @@ sub plugin_setup
 		if $kw->can('add_namespace_customizations');
 }
 
+sub HAS
+{
+	my $attrs = shift;
+	Moose->throw_error('Usage: private has \'name\' => ( key => value, ... )')
+		if @_ % 2 == 1;
+	$attrs = [$attrs] unless ref $attrs eq 'ARRAY';
+	my %options = ( definition_context => +{ Moose::Util::_caller_info() }, @_ );
+	push @{ $options{traits} }, 'Private';
+	caller->meta->add_attribute($_, %options) for @$attrs;
+}
+
 package MooseX::DeclareX::Plugin::private::Role;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::private::Role::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::private::Role::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::private::Role::VERSION   = '0.005';
 }
 
 use Moose::Role;
@@ -47,11 +58,13 @@ package MooseX::DeclareX::Plugin::private::Parser;
 
 BEGIN {
 	$MooseX::DeclareX::Plugin::private::Parser::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::DeclareX::Plugin::private::Parser::VERSION   = '0.004';
+	$MooseX::DeclareX::Plugin::private::Parser::VERSION   = '0.005';
 }
 
 use Moose;
 extends 'MooseX::DeclareX::MethodPrefix';
+
+sub handle_has { 'MooseX::DeclareX::Plugin::private::HAS' };
 
 override prefix_keyword => sub { 'private' };
 override install_method => sub {
