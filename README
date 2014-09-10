@@ -12,14 +12,14 @@ SYNOPSIS
 DESCRIPTION
     This distribution adds three new plugins to MooseX::DeclareX.
 
-    "private method"
+    `private method`
         A method that can only be called from within this class.
 
-    "protected method"
+    `protected method`
         A method that can be called from within this class, or from derived
         classes.
 
-    "public method"
+    `public method`
         Essentially a no-op.
 
 BUGS
@@ -35,8 +35,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED

@@ -4,17 +4,22 @@ MooseX-DeclareX-Privacy
 Created:      2012-08-22
 Home page:    <https://metacpan.org/release/MooseX-DeclareX-Privacy>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-DeclareX-Privacy>
-Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
+Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
-0.005  2013-07-03
+0.006	2014-09-10
 
- - (Bugfix) Get MooseX::DeclareX::Privacy actually working!
+ [ Packaging ]
+ - Switch to Dist::Inkt.
 
-0.004  2012-08-24
+0.005	2013-07-03
 
- - (Bugfix) Modules were being installed in an incorrectly named directory
-   (wrong case).
+ [ Bug Fixes ]
+ - Get MooseX::DeclareX::Privacy actually working!
 
-0.003  2012-08-22  # Split out from MooseX-DeclareX; no functional changes
+0.004	2012-08-24
 
+ [ Bug Fixes ]
+ - Modules were being installed in an incorrectly named directory (wrong
+   case).
 
+0.003	2012-08-22	Split out from MooseX-DeclareX; no functional changes
